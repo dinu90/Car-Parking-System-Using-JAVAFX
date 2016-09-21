@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.cell.PropertyValueFactory?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane layoutX="-19.0" layoutY="-11.0" prefHeight="564.0" prefWidth="657.0" xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1" fx:controller="itmd510.fp.controller.BookingController">
+	<children>
+		<ImageView disable="true" fitHeight="112.0" fitWidth="610.0" layoutX="37.0" layoutY="22.0" pickOnBounds="true" preserveRatio="true" AnchorPane.topAnchor="22.0">
+			<image>
+				<Image url="@../../img/HLogo.JPG" />
+			</image>
+		</ImageView>
+		<Hyperlink fx:id="hlinkBack" layoutX="60.0" layoutY="150.0" onAction="#hlinkBack_Click" text="&lt;&lt; Back" />
+		<Hyperlink fx:id="hlinkLogout" layoutX="556.0" layoutY="150.0" onAction="#hlinkLogout_Click" text="Logout" />
+		<Text fill="#5e5b5be3" layoutX="31.0" layoutY="550.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="bordertop" text="© developed by Dinesh Ganesan (dganesan@hawk.iit.edu) as a part of ITMD510 Course Work" textAlignment="CENTER" wrappingWidth="613.5944213867188" />
+		<TableView fx:id="tblViewLog" layoutX="37.0" layoutY="189.0" prefHeight="321.0" prefWidth="592.0">
+			<columns>
+				<TableColumn minWidth="5.333343505859375" prefWidth="124.66665649414062" text="Customer Name">
+					<cellValueFactory>
+						<PropertyValueFactory property="userName" />
+					</cellValueFactory>
+				</TableColumn>
+				<TableColumn minWidth="5.333343505859375" prefWidth="185.33334350585938" text="Description">
+					<cellValueFactory>
+						<PropertyValueFactory property="description" />
+					</cellValueFactory>
+				</TableColumn>
+				<TableColumn minWidth="5.333343505859375" prefWidth="137.00003051757812" text="From Date">
+					<cellValueFactory>
+						<PropertyValueFactory property="fromDate" />
+					</cellValueFactory>
+				</TableColumn>
+				<TableColumn minWidth="5.333343505859375" prefWidth="144.33331298828125" text="To Date">
+					<cellValueFactory>
+						<PropertyValueFactory property="toDate" />
+					</cellValueFactory>
+				</TableColumn>
+			</columns>
+		</TableView>
+	</children>
+</AnchorPane>

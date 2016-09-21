@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane layoutX="-19.0" layoutY="-11.0" prefHeight="564.0" prefWidth="657.0" xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1" fx:controller="itmd510.fp.controller.LoginController">
+	<children>
+		<ImageView disable="true" fitHeight="112.0" fitWidth="610.0" layoutX="37.0" layoutY="22.0" pickOnBounds="true" preserveRatio="true" AnchorPane.topAnchor="22.0">
+			<image>
+				<Image url="@../../img/HLogo.JPG" />
+			</image>
+		</ImageView>
+		<Text layoutX="179.0" layoutY="245.0" strokeType="OUTSIDE" strokeWidth="0.0" text="User Name" textAlignment="RIGHT" wrappingWidth="82.763671875" />
+		<Text layoutX="212.0" layoutY="278.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Password" />
+		<TextField fx:id="txtUserName" layoutX="287.0" layoutY="228.0" onKeyReleased="#ValidateUserName" prefHeight="25.0" prefWidth="149.0" styleClass="inputField" />
+		<PasswordField fx:id="txtPassword" layoutX="287.0" layoutY="261.0" onKeyReleased="#ValidatePassword" styleClass="inputField" />
+		<Text fx:id="errUserName" layoutX="446.0" layoutY="245.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="validationError" wrappingWidth="131.95117270946503" />
+		<Text fx:id="errPassword" layoutX="446.0" layoutY="278.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="validationError" wrappingWidth="131.95117223262787" />
+		<Button fx:id="btnLogin" layoutX="228.0" layoutY="309.0" mnemonicParsing="false" onAction="#btnLogin_Click" prefHeight="25.0" prefWidth="67.0" styleClass="btnClass" text="Login" />
+		<Button fx:id="btnReset" layoutX="322.0" layoutY="309.0" mnemonicParsing="false" onAction="#btnReset_Click" prefHeight="25.0" prefWidth="67.0" styleClass="btnClass" text="Reset" />
+		<Hyperlink layoutX="277.0" layoutY="353.0" onAction="#RedirectToRegistration" text="Create Account" />
+		<Text fill="#5e5b5be3" layoutX="31.0" layoutY="550.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="bordertop" text="© developed by Dinesh Ganesan (dganesan@hawk.iit.edu) as a part of ITMD510 Course Work" textAlignment="CENTER" wrappingWidth="613.5944213867188" />
+      <Text fx:id="txtLoginMsg" layoutX="205.0" layoutY="202.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="successMsg" textAlignment="CENTER" wrappingWidth="279.4700927734375" />
+
+	</children>
+</AnchorPane>

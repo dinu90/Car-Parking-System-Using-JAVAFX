@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane layoutX="-19.0" layoutY="-11.0" prefHeight="564.0" prefWidth="657.0" xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1" fx:controller="itmd510.fp.controller.HomeController">
+	<children>
+		<ImageView disable="true" fitHeight="112.0" fitWidth="610.0" layoutX="37.0" layoutY="22.0" pickOnBounds="true" preserveRatio="true" AnchorPane.topAnchor="22.0">
+			<image>
+				<Image url="@../../img/HLogo.JPG" />
+			</image>
+		</ImageView>
+		<Text fx:id="lblWelcome" layoutX="37.0" layoutY="154.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="pageHeading" wrappingWidth="592.329879373312" />
+		<Text layoutX="89.0" layoutY="202.0" opacity="0.5" strokeType="OUTSIDE" strokeWidth="0.0" text="Greetings," wrappingWidth="488.2610778808594" />
+		<Text layoutX="89.0" layoutY="218.0" opacity="0.5" strokeType="OUTSIDE" strokeWidth="0.0" text="        There are many operations which you can do. Each funcationlity is described with a description just below it. If you have any question related to the funcationlity please contact dganesan@hawk.iit.edu" textAlignment="JUSTIFY" wrappingWidth="488.2610778808594" />
+		<Text fill="#5e5b5be3" layoutX="31.0" layoutY="550.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="bordertop" text="© developed by Dinesh Ganesan (dganesan@hawk.iit.edu) as a part of ITMD510 Course Work" textAlignment="CENTER" wrappingWidth="613.5944213867188" />
+		<Button fx:id="btnAddCustomer" layoutX="89.0" layoutY="294.0" mnemonicParsing="false" onAction="#btnAddCustomer_Click" prefHeight="25.0" prefWidth="488.0" styleClass="btnClass" text="Add Customer" />
+		<Button fx:id="btnAddEmployee" layoutX="89.0" layoutY="338.0" mnemonicParsing="false" onAction="#btnAddEmployee_Click" prefHeight="25.0" prefWidth="488.0" styleClass="btnClass" text="Add Employee" />
+		<Button fx:id="btnAccessButton" layoutX="89.0" layoutY="384.0" mnemonicParsing="false" onAction="#btnAccessButton_Click" prefHeight="25.0" prefWidth="488.0" styleClass="btnClass" text="Give Admin Access to Employee" />
+		<Button fx:id="btnViewParkingSpace" layoutX="89.0" layoutY="429.0" mnemonicParsing="false" onAction="#btnViewParkingSpace_Click" prefHeight="25.0" prefWidth="488.0" styleClass="btnClass" text="Parking Details" />
+		<Button fx:id="btnViewParkingLog" layoutX="89.0" layoutY="472.0" mnemonicParsing="false" onAction="#btnViewParkingLog_Click" prefHeight="25.0" prefWidth="488.0" styleClass="btnClass" text="View Parking Logs" />
+		<Text fx:id="txtAdminSuccess" layoutX="89.0" layoutY="274.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="successMsg" textAlignment="CENTER" wrappingWidth="487.9999985396862" />
+		<Hyperlink fx:id="hlinkLogout" layoutX="556.0" layoutY="150.0" onAction="#Logout_Click" text="Logout" />
+	</children>
+</AnchorPane>
